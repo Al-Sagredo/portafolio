@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álvaro Sagredo Vergara | Portafolio Full Stack Python</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --dark-bg: #121824;
+      --card-bg: #ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: white;
+      padding: 90px 0 70px;
+    }
+    .badge-tech {
+      background-color: #e9ecef;
+      color: #495057;
+      font-weight: 500;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    .project-card {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    .spotlight-card {
+      border-left: 6px solid #0d6efd;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(13, 110, 253, 0.08);
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background-color: rgba(13, 27, 42, 0.95) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio"><i class="bi bi-code-slash text-primary me-2"></i>Álvaro Sagredo V.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#caso-estudio">Caso de Estudio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item">
+            <a class="btn btn-outline-light btn-sm ms-lg-2" href="https://docs.google.com/document/d/1wv_F9O-XOVtnNFdFdbb-6S8IHpudPh2TF90PaAFdwAE/edit" target="_blank">
+              <i class="bi bi-file-earmark-text me-1"></i>Ver Documento ABP
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección 1: Inicio / Hero -->
+  <header id="inicio" class="hero-section text-center text-lg-start">
+    <div class="container pt-5">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Trainee Full Stack Python | HealthTech</span>
+          <h1 class="display-4 fw-bold mb-3">Hola, soy Álvaro Sagredo Vergara</h1>
+          <p class="lead text-light opacity-75 mb-4">
+            Transformando el conocimiento del área de la salud en soluciones tecnológicas escalables mediante Python, Django y Bases de Datos Relacionales.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a href="#caso-estudio" class="btn btn-primary btn-lg px-4"><i class="bi bi-star-fill me-2"></i>Ver Caso de Estudio</a>
+            <a href="https://docs.google.com/document/d/1wv_F9O-XOVtnNFdFdbb-6S8IHpudPh2TF90PaAFdwAE/edit" target="_blank" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-box-arrow-up-right me-2"></i>Informe Técnico Google Docs
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5 py-4">
+
+    <!-- Sección 2: Sobre Mí -->
+    <section id="sobre-mi" class="mb-5 pb-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+            <h2 class="h3 fw-bold mb-4 text-primary"><i class="bi bi-person-badge me-2"></i>Sobre Mí y Propuesta de Valor</h2>
+            <p class="lead fs-6 text-muted">
+              Cuento con trayectoria profesional en el <strong>área de la salud</strong>, complementada con formación intensiva en <strong>Desarrollo Full Stack Python</strong> (SENCE / Alkemy). Esta convergencia me otorga una perspectiva única: rigor analítico, alta empatía con el usuario final, meticulosidad en el tratamiento seguro de datos y capacidad para tender puentes entre necesidades clínicas y soluciones informáticas.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 text-center">
+                  <i class="bi bi-shield-check text-primary fs-3"></i>
+                  <h6 class="fw-bold mt-2">Seguridad y Rigor</h6>
+                  <small class="text-muted">Enfoque preventivo en la integridad y consistencia de los datos.</small>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 text-center">
+                  <i class="bi bi-diagram-3 text-primary fs-3"></i>
+                  <h6 class="fw-bold mt-2">Arquitectura MVT</h6>
+                  <small class="text-muted">Desarrollo backend estructurado con Python, Django y ORM.</small>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 bg-light rounded-3 text-center">
+                  <i class="bi bi-people text-primary fs-3"></i>
+                  <h6 class="fw-bold mt-2">Trabajo en Equipo</h6>
+                  <small class="text-muted">Metodologías ágiles y versionado continuo con Git/GitHub.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Proyectos del Portafolio -->
+    <section id="proyectos" class="mb-5 pb-4">
+      <div class="text-center mb-5">
+        <h2 class="h3 fw-bold">Proyectos Destacados</h2>
+        <p class="text-muted">Muestra de aplicaciones construidas a lo largo del programa formativo</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 project-card p-3">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-info text-dark w-auto align-self-start mb-2">Frontend Web</span>
+              <h5 class="card-title fw-bold">Alke Wallet (UI Dinámica)</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Maquetación y prototipado responsive para una billetera digital. Incluye validaciones interactivas, manipulación dinámica del DOM y flujo de transferencias.
+              </p>
+              <div class="mb-3">
+                <span class="badge badge-tech">HTML5</span>
+                <span class="badge badge-tech">CSS3</span>
+                <span class="badge badge-tech">Bootstrap 5</span>
+                <span class="badge badge-tech">JavaScript</span>
+                <span class="badge badge-tech">jQuery</span>
+              </div>
+              <a href="https://github.com/" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>Ver Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 project-card p-3">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-secondary w-auto align-self-start mb-2">Python Core & POO</span>
+              <h5 class="card-title fw-bold">Gestor Inteligente de Clientes (GIC)</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Sistema modular en consola orientado a objetos con herencia, polimorfismo, manejo estructurado de excepciones y persistencia en SQLite y archivos JSON/CSV.
+              </p>
+              <div class="mb-3">
+                <span class="badge badge-tech">Python 3</span>
+                <span class="badge badge-tech">POO</span>
+                <span class="badge badge-tech">SQLite</span>
+                <span class="badge badge-tech">UML</span>
+                <span class="badge badge-tech">PEP 8</span>
+              </div>
+              <a href="https://github.com/" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="bi bi-github me-1"></i>Ver Repositorio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 project-card p-3 border-primary">
+            <div class="card-body d-flex flex-column">
+              <span class="badge bg-primary w-auto align-self-start mb-2">Full Stack MVC</span>
+              <h5 class="card-title fw-bold">Alke Wallet (Django App)</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Plataforma web financiera integral con autenticación, panel administrativo, operaciones CRUD completas y base de datos relacional modelada con ORM.
+              </p>
+              <div class="mb-3">
+                <span class="badge badge-tech">Django</span>
+                <span class="badge badge-tech">PostgreSQL/SQLite</span>
+                <span class="badge badge-tech">ORM</span>
+                <span class="badge badge-tech">CSRF</span>
+              </div>
+              <a href="#caso-estudio" class="btn btn-primary btn-sm"><i class="bi bi-arrow-down-circle me-1"></i>Ver Caso Detallado</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Caso de Estudio (Spotlight) -->
+    <section id="caso-estudio" class="mb-5 pb-4">
+      <div class="p-4 p-md-5 spotlight-card">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+          <div>
+            <span class="badge bg-primary px-3 py-2 rounded-pill">Caso de Estudio Principal</span>
+            <h2 class="h3 fw-bold mt-2 mb-0">Alke Wallet: Aplicación Web Financiera con Django</h2>
+          </div>
+          <a href="https://docs.google.com/document/d/1wv_F9O-XOVtnNFdFdbb-6S8IHpudPh2TF90PaAFdwAE/edit" target="_blank" class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-file-earmark-pdf me-1"></i>Ver Informe Completo en Docs
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h5 class="fw-bold text-dark"><i class="bi bi-flag text-primary me-2"></i>El Desafío</h5>
+            <p class="text-muted small">
+              Integrar de extremo a extremo la arquitectura MVT (Modelo-Vista-Template), asegurando la consistencia transaccional y la integridad referencial en un entorno financiero simulado. Se requirió modelar relaciones complejas (Clientes, Cuentas, Transacciones), versionar migraciones y proteger el aplicativo contra vulnerabilidades como CSRF y accesos no autorizados.
+            </p>
+
+            <h5 class="fw-bold text-dark mt-4"><i class="bi bi-lightbulb text-primary me-2"></i>Solución Técnica</h5>
+            <p class="text-muted small">
+              Se crearon modelos de datos con llaves foráneas y restricciones en <code>models.py</code> usando el ORM de Django, se implementaron migraciones ordenadas con <code>makemigrations</code> y se estructuraron vistas CRUD con formularios seguros y autenticación nativa vía <code>django.contrib.auth</code>.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="fw-bold text-dark"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Métricas de Impacto</h5>
+            <ul class="list-group list-group-flush small mb-4">
+              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                <span>Eficiencia de Desarrollo</span>
+                <span class="badge bg-success rounded-pill">~40% Ahorro de tiempo</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                <span>Seguridad de Formularios</span>
+                <span class="badge bg-primary rounded-pill">100% Cobertura CSRF</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                <span>Integridad Referencial</span>
+                <span class="badge bg-info text-dark rounded-pill">100% Consistencia BD</span>
+              </li>
+            </ul>
+
+            <h5 class="fw-bold text-dark"><i class="bi bi-tools text-primary me-2"></i>Stack Utilizado</h5>
+            <div>
+              <span class="badge badge-tech p-2">Python 3</span>
+              <span class="badge badge-tech p-2">Django Framework</span>
+              <span class="badge badge-tech p-2">ORM Django</span>
+              <span class="badge badge-tech p-2">SQLite / PostgreSQL</span>
+              <span class="badge badge-tech p-2">Bootstrap 5</span>
+              <span class="badge badge-tech p-2">Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 5: Contacto -->
+    <section id="contacto" class="text-center py-4">
+      <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-white">
+        <h2 class="h3 fw-bold mb-3">¿Conversamos?</h2>
+        <p class="text-muted mb-4">Estoy disponible para oportunidades laborales como Desarrollador Trainee / Junior en el ecosistema Tech y HealthTech.</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="mailto:alvergarax@gmail.com" class="btn btn-primary px-4 py-2"><i class="bi bi-envelope-fill me-2"></i>alvergarax@gmail.com</a>
+          <a href="https://linkedin.com/" target="_blank" class="btn btn-outline-primary px-4 py-2"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://github.com/" target="_blank" class="btn btn-outline-dark px-4 py-2"><i class="bi bi-github me-2"></i>GitHub</a>
+          <a href="https://docs.google.com/document/d/1wv_F9O-XOVtnNFdFdbb-6S8IHpudPh2TF90PaAFdwAE/edit" target="_blank" class="btn btn-outline-success px-4 py-2">
+            <i class="bi bi-file-earmark-text-fill me-2"></i>Documento Proyecto ABP
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted border-top bg-white">
+    <div class="container small">
+      <p class="mb-0">© 2026 Álvaro Sagredo Vergara | Portafolio Digital - SENCE / Alkemy</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
